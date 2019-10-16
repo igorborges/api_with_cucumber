@@ -6,7 +6,7 @@ const env = require('dotenv').config({ path: `./config/env/${process.env.AMBIENT
 if (env.error) throw env.error;
 
 defineSupportCode(({ Before }) => {
-    Storage.setGlobalVariable('ambiente', process.env.FIXTURES_PATH);
+    Storage.setGlobalVariable('ambiente', process.env.DATA);
 
 
     defineSupportCode(({ setDefaultTimeout }) => {
