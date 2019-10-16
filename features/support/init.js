@@ -28,4 +28,14 @@ defineSupportCode(({ Before }) => {
             .setDomain(process.env.HOST_TEST)
     });
 
+    Before({ tags: '@placeholder' }, () => {
+        Request
+            .setDomain(process.env.JSON_PLACEHOLDER)
+    });
+
+    Before({ tags: '@marketplace' }, () => {
+        Request
+            .setDomain(process.env.MARKETPLACE)
+    });
+
 })

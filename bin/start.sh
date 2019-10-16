@@ -8,4 +8,4 @@ fi
 
 AMBIENTE=$1.env ./node_modules/.bin/cucumber-js features/$2.feature -f json:test/report/cucumber_report.json
 
-node ./test/report/report.js
+# node ./test/report/report.js
