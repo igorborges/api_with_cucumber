@@ -36,6 +36,14 @@ defineSupportCode(({ Before }) => {
     Before({ tags: '@marketplace' }, () => {
         Request
             .setDomain(process.env.MARKETPLACE)
+            .setRequestHeader('Content-Type', 'application/json')
+            .setRequestHeader('Accept', 'application/json')
+//            .removeRequestHeader('User-Agent');
     });
+
+    Before({ tags: '@cartola' }, () => {
+            Request
+                .setDomain(process.env.CARTOLA)
+        });
 
 })
