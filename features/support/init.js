@@ -36,14 +36,13 @@ defineSupportCode(({ Before }) => {
     Before({ tags: '@marketplace' }, () => {
         Request
             .setDomain(process.env.MARKETPLACE)
-            .setRequestHeader('Content-Type', 'application/json')
-            .setRequestHeader('Accept', 'application/json')
-//            .removeRequestHeader('User-Agent');
+            .setRequestHeader('User-Agent', 'PostmanRuntime/7.17.1')
     });
 
-    Before({ tags: '@cartola' }, () => {
+    Before({ tags: '@wsloja' }, () => {
             Request
-                .setDomain(process.env.CARTOLA)
+                .setDomain(process.env.WSLOJA)
+                .setRequestHeader('User-Agent', 'PostmanRuntime/7.17.1')
         });
 
 })

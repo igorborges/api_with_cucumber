@@ -1,0 +1,174 @@
+orderJson={
+  "deliveryFee" : 5,
+  "restaurantOrder" : [
+    {
+      "restaurant" : {
+        "name" : "`merchantName`",
+        "locale" : "pt_BR",
+        "uuid" : "`merchantId`"
+      },
+      "itens" : [
+        {
+          "unitOriginalPrice" : 0,
+          "unitPrice" : 0,
+          "state" : "valid",
+          "isPromotion" : false,
+          "pizzaFlavors" : [],
+          "tags" : [],
+          "code" : "`itemCode`",
+          "description" : "`itemDescription`",
+          "obs" : "",
+          "qty" : 1,
+          "unitMinPrice" : 10,
+          "choices" : [
+            {
+              "name" : "`choiceName`",
+              "code" : "`choiceCode`",
+              "min" : 0,
+              "max" : 0,
+              "garnishItens" : [
+                {
+                  "unitPrice" : `unitPrice`,
+                  "description" : "`garnishItemDescription`",
+                  "details" : "`garnishItemDetails`",
+                  "qty" : 1,
+                  "addition" : 0,
+                  "code" : "`garnishItemCode`"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "status" : [
+
+      ]
+    }
+  ],
+  "customer" : {
+    "email" : "AUTOMATIONIFOOD@GMAIL.COM",
+    "name" : "Automation Ifood",
+    "tags" : [],
+    "cpf" : "32083406800",
+    "uuid" : "127ebc5f-7462-491a-bc12-18195f0dba5f",
+    "id" : 156300755,
+    "phones" : [
+      {
+        "phone" : 991768811,
+        "areaCode" : 19
+      }
+    ]
+  },
+  "togo" : false,
+  "deliveryMethod" : {
+    "minTime" : 20,
+    "type" : "FIXED",
+    "schedule" : {
+      "now" : true,
+      "shifts" : [
+        {
+          "startTime" : "01:00",
+          "endTime" : "22:59",
+          "dayOfWeek" : 1
+        },
+        {
+          "endTime" : "22:59",
+          "startTime" : "17:00",
+          "dayOfWeek" : 4
+        },
+        {
+          "startTime" : "01:00",
+          "dayOfWeek" : 0,
+          "endTime" : "22:59"
+        },
+        {
+          "endTime" : "22:59",
+          "startTime" : "01:00",
+          "dayOfWeek" : 2
+        },
+        {
+          "endTime" : "22:59",
+          "dayOfWeek" : 3,
+          "startTime" : "01:00"
+        },
+        {
+          "startTime" : "01:00",
+          "endTime" : "22:59",
+          "dayOfWeek" : 5
+        },
+        {
+          "endTime" : "22:59",
+          "startTime" : "01:00",
+          "dayOfWeek" : 6
+        }
+      ]
+    },
+    "value" : 5,
+    "mode" : "DELIVERY",
+    "id" : "DEFAULT",
+    "subtitle" : "O entregador leva até você agora",
+    "maxTime" : 30,
+    "title" : "Padrão",
+    "priority" : 1
+  },
+  "test" : true,
+  "version" : "9.21.0",
+  "source" : "iphone iFood",
+  "credit" : 0,
+  "scheduled" : false,
+  "address" : {
+    "location" : {
+      "lon" : -67.9475,
+      "zipCode" : 69923000,
+      "lat" : -9.82274
+    },
+    "addressId" : 232441285
+  },
+  "cpf" : "32083406800",
+  "expectedDeliveryTime" : 20,
+  "totalAmount" : 16,
+  "payment" : [
+    {
+      "additionalParameters" : {
+        "ifood.gateway.adyen_encripted_form" : "adyenan0_1_1$mKpCMj13gY7I7xwyxO+yFPfV7bHIhbqbjbVGnV8cncmbX9yD5mwKRw23cmcx4f1V2clnhl11E043gNm+wMVHBVo4SFWJvrY\/3c+uDYFIatz4qTvz3sx3YMKdz5PePovok3igZwlr7j\/K7owATFYfLbH6OmlqPySqdnGngmWMaKC8LaJoDKyYhGLmkRJJlMIWD8JklEDyEk0DHDpiIogLLuqQGb2g0HAiWGpA8Lx0IVL9x9ukWGCeyZklz0+nVe\/R7G6UVDU95s6Jq01XGCwOQO1dMOJ0MVWb+r+8\/L+gGXC+VrTMdpdoVJi2A8vNAZdPYbuhd\/h61GL3eX3izTDXkQ==$h\/NL1Ydxmj0pszsYqcT2s1RNvzCYfN+u4\/CeFj2GqsOvqv8LKj5Htn3OytB3cxHiFpjr1fjXmVXE8KuxJUqGWFWIfkKCiPi0E8sKRO1t6De27k24VDzqmbCqlEdQbgYjSimOr\/B3PsAU6kttBOeg3gGr84RMspz+dUCEn6\/bmVOxjYQj4PIMV73C4794Rt6z6n2U31npsZRVVDu5YKbF7jAgynO\/oCrpVG0L+ioRUzxkbntF6murgmziXDkO6uE=",
+        "ifood.gateway.cybersource_fingerprint" : "1295a47b69e04e5cb2e01a3c236a4d8d",
+        "ifood.gateway.device_fingerprint" : "{\"plataforma\":\"IOS\",\"fabricante\":\"Apple\",\"deviceID\":\"uuidNotDetected\",\"modelo\":\"deviceModelNotDetected\",\"operadora\":\"carrierNotDetected\",\"os\":\"iOS\",\"osVersion\":\"13.0\",\"deviceName\":\"iPhone 11 Pro Max\",\"ssidWifi\":\"Unavailable\",\"ddd\":\"\",\"telefone\":\"\",\"latitude\":\"\",\"longitude\":\"\"}"
+      },
+      "paymentOption" : {
+        "gateway" : "ADN",
+        "paymentType" : {
+          "code" : "1",
+          "description" : "CARTÃO DE CRÉDITO"
+        },
+        "savedPreviously" : true,
+        "creditCardRegex" : "^4(?!01178|01179|31274|38935|51416|57393|57631|57632)\\d{12}(?:\\d{3})?$",
+        "description" : "VISA •••• 1111",
+        "isSelected" : false,
+        "code" : "VIS",
+        "gatewayOptions" : {
+          "ifood.gateway.debit.disclaimer" : "Este restaurante aceita pagamentos com cartão de débito do Banco Santander (Mastercard) e Banco do Brasil (Visa e Mastercard).",
+          "ifood.gateway.adyen_encryptation_key" : "10001|CDF956F440A11F426B10122EDDE9E616958EC7D48EC677ABDFC0118FC41842C67BE9EE97F643A2A73FF444962620C516C65DC5204682548E47F10C9D8AAF7BA4AF683D62C8DC11800FC02579FB6F11F67EF297B60C42BDCDA158424BC74DFF4E1AF08805A54DF59C54EC4E1BF5D1379DA98030D4D05C7E8EA7561470C1813D1654BA31C208C09025099323B36ED08E7B0AEFA39DA36BAA43D7C6A51D97A2920E945CA21D1E0EAC8108219D53AF6DB0E91477BFAA61648BE1D60BDD62EA1D2E040E67641C030CDCAC1951FA2BB3CDC54468E5A3D4A2E889F768950B7445358F3140005FF1FE9276A159A8BD71C47C80FB2667BD5D52FC0620E92A8D73A70B6047",
+          "ifood.gateway.gpy.gateway_merchant_id" : "IFoodBR_PwGoogle",
+          "ifood.gateway.gpy.gateway" : "adyen",
+          "ifood.gateway.adyen_generation_time" : "2019-10-24T20:31:10Z"
+        },
+        "digitalWallets" : [
+          "GPY"
+        ],
+        "savedCard" : true,
+        "debitSupported" : false
+      },
+      "debit" : false,
+      "creditCardOrder" : {
+        "isBeingChallenged" : false,
+        "expireDate" : "10\/20",
+        "holderDocument" : "01234567890",
+        "isLastUsed" : false,
+        "holderName" : "Mj vjhg",
+        "number" : "4111111111111111",
+        "type" : "multi",
+        "cvv" : ""
+      }
+    }
+  ]
+}&email=AUTOMATIONIFOOD@GMAIL.COM

@@ -1,0 +1,11 @@
+{
+  "token": "`access_token`",
+  "tenant_id": "IFO",
+  "device_id": "1",
+  "public_key": {
+    "cloud_id": "anycloudid",
+    "public_key": "`access_token`",
+    "platform": "IOS",
+    "algorithm": "RSA_SHA512"
+  }
+}
