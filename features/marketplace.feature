@@ -1,3 +1,4 @@
+#noinspection CucumberUndefinedStep
 Feature: Marketplace
 
   @marketplace
@@ -5,7 +6,7 @@ Feature: Marketplace
     Given I set headers to
       | name         | value                          |
       | Content-Type | application/json;charset=utf-8 |
-    Given I set body to {"tenant_id":"IFO","type":"EMAIL","email":"automationifood@gmail.com"}
+    And I set body to {"tenant_id":"IFO","type":"EMAIL","email":"automationifood@gmail.com"}
     When I POST to /v1/identity-providers/OTP/authorization-codes
     Then response code should be 201
     And response body should be valid json
@@ -108,14 +109,13 @@ Feature: Marketplace
 
 
   @wsloja
-#  @debug
   Scenario: create an order checkout
     Given I set headers to
       | name          | value                             |
       | session_token | `session_token`                   |
       | authorization | Bearer `bearer_token`             |
       | content-type  | application/x-www-form-urlencoded |
-    And I pipe contents of file ./data/login/order to body
+    And I pipe contents of file ./data/order/checkout to body
     When I POST to /ifood-ws-v3/v3/order/checkout
     Then response code should be 200
     And response body should be valid json
